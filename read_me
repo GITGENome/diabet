@@ -24,4 +24,9 @@ Visualization
 
 Normalité. Tous les données a distribution normal
 ANOVA test a confimé que tous les variables sont impact dans la maladie
+  
+                                                ***
 
+le clustering prevoit existance de trois clusters au lieux de deux (malade, pas malade). Peux etre cette base de 
+   donner est melangé de deux diabet differant avec les characteristique parfois oppsite. Cela peut explique 3 clusters
+   (pas malade, diabet 1, diabet 2)
