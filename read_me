@@ -1,1 +1,27 @@
-hello
+Le colonnes suivants Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin, BMI, DiabetesPedigreeFunction, Age
+
+Les valeurs problematique:
+  Insulin - la motier de df avec insulin = 0. Mais 60% de gens avec cette valeur ne sont pas diabetique, peut-etre c'est le problen
+            de detection.
+  Glucose, BloodPression, SkinThickness, BMI - c'est pas possible d'avoir 0.
+  Pregnancy - beaucoup de pregnancies, mais c'est a cause de pecularité regional
+
+!!!
+ON REMPLECE CE 5 variable par les valeur median (Glucose, BloodPression, SkinThickness, BMI, Insulin). 
+Quand on remplace ces valeurs on utilise le mask pour calculer la madiane sans rendre compter les valeurs 0
+
+                                                ***
+
+Visualization
+  Boxplot. There is no clear difference between healthy and sick boxplots. The most evident influence is glucose level, 
+          BMI has an inpact also, less strong
+  Heatmap. The higher coef is with glucose (0.47), some impact has the following valeus: BMI (0.29), age (0.27), pregnancies (0.22). 
+          After replacing 0 values with median the coefficients became more significant
+  Distplot. Le meme conclution. 
+  Paiplot. Pareil
+  
+                                                ***
+
+Normalité. Tous les données a distribution normal
+ANOVA test a confimé que tous les variables sont impact dans la maladie
+
